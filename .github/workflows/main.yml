@@ -1,11 +1,12 @@
 name: Quadratic Equation
 on: [push]
-steps:
-- uses: actions/checkout@v4
-- name: Set up Python
-  uses: actions/setup-python@v5
-  with:
-    python-version: '3.13'
-- name: Test with pytest
-  run: |
-    pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+jobs:
+  steps:
+  - uses: actions/checkout@v4
+  - name: Set up Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.13'
+  - name: Test with pytest
+    run: |
+      pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
