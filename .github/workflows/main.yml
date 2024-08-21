@@ -1,5 +1,5 @@
-on:
-  push: [main]
+name: Quadratic Equation
+on: [push]
 steps:
 - uses: actions/checkout@v4
 - name: Set up Python
