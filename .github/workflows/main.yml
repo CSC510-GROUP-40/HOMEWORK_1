@@ -13,9 +13,8 @@ jobs:
       - name: Setu Up Coverage
         run: |
           pip install genbadge[coverage]
-          coverage report
-          genbadge coverage
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov
           pytest test_main.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          genbadge coverage
