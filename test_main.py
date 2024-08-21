@@ -1,5 +1,5 @@
 import pytest
-from main import solve_quadratic  # Replace 'your_module' with the actual module name where the function is located
+from main import solve_quadratic 
 
 def test_solve_quadratic_passing():
     # Test the equation x^2 - 3x + 2 = 0
