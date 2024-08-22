@@ -17,5 +17,5 @@ jobs:
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov
-          pytest test_main.py --doctest-modules --junitxml=junit/test-results.xml --cov=main --cov-report=xml:reports/coverage/coverage.xml --cov-report=html:reports/coverage/coverage.html
+          pytest test_main.py --doctest-modules --junitxml=junit/test-results.xml --cov=main --cov-report=xml:./reports/coverage/coverage.xml --cov-report=html:./reports/coverage/coverage.html
           genbadge coverage
