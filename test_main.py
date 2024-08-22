@@ -8,8 +8,8 @@ def test_solve_quadratic_passing():
     assert result == expected, f"Expected {expected}, but got {result}"
 
 
-#def test_solve_quadratic_failing():
+def test_solve_quadratic_failing():
     # Test the equation 2x^2 + 4x - 6 = 0 with an incorrect expected value
-#    result = solve_quadratic(2, 4, -6)
-#    expected = (2.0, -2.0)  # Incorrect expected value
-#    assert result == expected, f"Expected {expected}, but got {result}"
+    result = solve_quadratic(2, 4, -6)
+    expected = (2.0, -2.0)  # Incorrect expected value
+    assert result == expected, f"Expected {expected}, but got {result}"
