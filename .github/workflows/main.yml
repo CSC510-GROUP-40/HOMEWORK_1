@@ -18,5 +18,7 @@ jobs:
         run: |
           pip install pytest pytest-cov coveralls
           coverage run --source=mypkg -m pytest test_main.py
-          coveralls
+          coveralls --service=github-actions
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
           
