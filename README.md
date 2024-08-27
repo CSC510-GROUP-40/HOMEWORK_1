@@ -73,8 +73,7 @@ To Contribute
 - Open a pull request.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the Apache License 2.0 See the LICENSE file for more details.
 
 ### Contact Information
-In case of any issues, please e-mail your queries to csc510-group-hll@gmail.com or raise an issue on this repository.<br>
-Our team of developers monitors this e-mail address and would be happy to answer any and all questions you have about setup or use of this project!
+In case of any issues, please raise an issue on this repository.<br> Our team of developers monitors the issues and would be happy to answer any and all questions you have about this project!
