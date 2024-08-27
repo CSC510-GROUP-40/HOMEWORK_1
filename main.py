@@ -13,8 +13,12 @@ def solve_quadratic(a, b, c):
         root = -b / (2*a)
         return (root)
     else:
-        return "complex roots"
+        real_part = -b / (2*a)
+        imaginary_part = math.sqrt(abs(discriminant)) / (2*a)
+        root1 = complex(real_part, imaginary_part)
+        root2 = complex(real_part, -imaginary_part)
+        return (root1, root2)
 
 
-result = solve_quadratic(1, -3, 2)
+result = solve_quadratic(1, 2, 5)
 print(result)
