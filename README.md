@@ -10,11 +10,11 @@
 ## Overview
 This assignment involves creating a Python program that solves quadratic equations of the form:
 
-\[ ax^2 + bx + c = 0 \]
+$$ ax^2 + bx + c = 0 $$
 
 where `a`, `b`, and `c` are real numbers, and `a` is not equal to 0. The program will calculate the roots of the quadratic equation using the quadratic formula:
 
-\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 The program should handle all possible scenarios:
 - Two distinct real roots
@@ -26,13 +26,13 @@ The program should handle all possible scenarios:
 1. Implement a function to calculate the roots of a quadratic equation in the main file.
 2. Handle edge cases, including:
    - Coefficient `a` is zero (which would make it a linear equation, not handled in this version).
-   - The discriminant (`b^2 - 4ac`) is negative, resulting in complex roots.
+   - The discriminant $b^2 - 4ac$ is negative, resulting in complex roots.
 3. Write test cases in a separate test file to validate the solver function.
 
 ## File Structure
 
 - `main.py`: The main file containing the implementation of the quadratic equation solver.
-- `test_quadratic_solver.py`: A separate test file containing test cases for validating the solver function using `pytest`.
+- `test_main.py`: A separate test file containing test cases for validating the solver function using `pytest`.
 
 ## Getting Started
 
