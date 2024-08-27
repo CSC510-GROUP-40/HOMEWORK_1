@@ -25,5 +25,5 @@ def test_solve_quadratic_zero_discriminant():
 def test_solve_quadratic_complex_roots():
     # Test the equation x^2 + 2x + 5 = 0
     result = solve_quadratic(1, 2, 5)
-    expected =  "complex roots"
+    expected =  ((-1+2j), (-1-2j))
     assert result == expected, f"Expected {expected}, but got {result}"
